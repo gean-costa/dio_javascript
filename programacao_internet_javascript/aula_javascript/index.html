@@ -5,10 +5,24 @@
         <meta charset="UTF-8">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <!-- <script>
             alert("Meu primeiro JS");
         </script> -->
         <h1>Minha Página</h1>
+        <button type="button" onclick="button()">Clique aqui para alertar</button>
+        <button type="button" onclick="buttonWrite()">Clique aqui para escrever</button>
+        <button type="button" onclick="buttonClean()">Clique aqui para limpar</button>
+        <button type="button" onclick="redirect()">Repo no github</button>
+        <h3 id="agradecimento"></h3>
+        <p  id="mouseMover" onmouseover="change()" onmouseout="unchange()">Passe o mouse aqui.</p>
+        <p  id="mouseMover2" onmouseover="newChange(this)" onmouseout="newUnchange(this)">Passe o mouse aqui.</p>
+        <p  id="mouseMover3" onmouseover="newChange(this)" onmouseout="newUnchange(this)">Passe aqui também.</p>
+        <select onchange="onChange(this)">
+            <option value="0">Selecionar</option>
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>

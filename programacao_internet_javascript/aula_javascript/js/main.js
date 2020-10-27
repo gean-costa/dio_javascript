@@ -1,3 +1,5 @@
+// PARTE 1: INTRODUÇÃO AO JAVASCRIPT
+
 // 1 introdução ao Javascript
 
 // alert("Meu segundo JS");
@@ -83,9 +85,72 @@
 //     console.log("Menor de idade.");
 // }
 
-var data = new Date();
-console.log(data);
-console.log(data.getDate());
-console.log(data.getHours());
-console.log(data.getMinutes());
-console.log(data.getMonth());
+// var data = new Date();
+// console.log(data);
+// console.log(data.getDate());
+// console.log(data.getHours());
+// console.log(data.getMinutes());
+// console.log(data.getMonth());
+
+// PARTE 2: DESENVOLVA PÁGINAS WEB COM JAVASCRIPT
+// desenvolva páginas web com javascript
+// function soma(a, b) {
+//     return a + b;
+// }
+
+// console.log(soma(3, 2));
+
+// function setReplace(frase, nome, novoNome){
+//     return frase.replace(nome, novoNome);
+// }
+
+// var frase = prompt("Frase:");
+// var nome = prompt("Nome:");
+// var novoNome = prompt("Novo nome:");
+
+// alert(setReplace(frase, nome, novoNome));
+
+// manipulando elementos da página
+
+function load(){
+    console.log("Página carregada.")
+}
+
+function button(){
+    alert("Obrigado por clicar");
+}
+
+function buttonWrite(){
+    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar";
+}
+
+function buttonClean(){
+    document.getElementById("agradecimento").innerHTML = "";
+}
+
+function redirect(){
+    // abre em uma outra janela
+    window.open("https://github.com/gean-costa/dio_javascript");
+    // para abrir na mesma janela
+    // window.location.href = "https://github.com/gean-costa/dio_javascript";
+}
+
+function change(){
+    document.getElementById("mouseMover").innerHTML = "Trocou porque passou o mouse";
+}
+
+function unchange(){
+    document.getElementById("mouseMover").innerHTML = "Passe o mouse aqui.";
+}
+
+function newChange(elemento){
+    elemento.innerHTML = "Trocou porque passou o mouse";
+}
+
+function newUnchange(elemento){
+    elemento.innerHTML = "Passe o mouse aqui.";
+}
+
+function onChange(elemento){
+    console.log(elemento.value);
+}
